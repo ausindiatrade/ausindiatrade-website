@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520">
+<rect width="1000" height="520" fill="#0B1F3A"/>
+<g fill="#2f5d9a">
+<ellipse cx="250" cy="220" rx="120" ry="70"/>
+<ellipse cx="720" cy="280" rx="140" ry="80"/>
+</g>
+<circle cx="260" cy="215" r="6" fill="#F9B233"/>
+<circle cx="720" cy="285" r="6" fill="#F9B233"/>
+<path d="M266 215 C420 120 560 360 714 285" stroke="#F9B233" stroke-width="5" fill="none"/>
+<text x="205" y="315" fill="white" font-size="22">India</text>
+<text x="655" y="390" fill="white" font-size="22">Australia</text>
+</svg>

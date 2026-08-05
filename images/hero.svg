@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+<rect width="900" height="500" fill="#0B1F3A"/>
+<circle cx="230" cy="220" r="70" fill="#F9B233"/>
+<circle cx="690" cy="280" r="70" fill="#F9B233"/>
+<path d="M300 220 C430 120 520 360 620 280" stroke="white" stroke-width="7" fill="none"/>
+<text x="185" y="320" fill="white" font-size="26">India</text>
+<text x="635" y="380" fill="white" font-size="26">Australia</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 170">
+
+  <defs>
+
+    <style>
+
+      .name{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:700;
+        font-size:58px;
+      }
+
+      .tag{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:18px;
+        fill:#6D7788;
+      }
+
+    </style>
+
+  </defs>
+
+  <!-- Letter A -->
+
+  <path
+        fill="#0B1F3A"
+        d="M70 145
+           L145 20
+           L220 145
+           L185 145
+           L145 75
+           L105 145 Z"/>
+
+  <!-- Arrow -->
+
+  <path
+        d="M50 120
+           C95 90 130 70 185 40"
+        fill="none"
+        stroke="#F9B233"
+        stroke-width="12"
+        stroke-linecap="round"/>
+
+  <polygon
+      fill="#F9B233"
+      points="
+      175,34
+      210,35
+      188,60"/>
+
+  <!-- Business name -->
+
+  <text
+        x="250"
+        y="85"
+        class="name"
+        fill="#0B1F3A">
+
+        Aus
+
+  </text>
+
+  <text
+        x="360"
+        y="85"
+        class="name"
+        fill="#F9B233">
+
+        India
+
+  </text>
+
+  <text
+        x="500"
+        y="85"
+        class="name"
+        fill="#0B1F3A">
+
+        Trade
+
+  </text>
+
+  <!-- Tagline -->
+
+  <text
+        x="250"
+        y="125"
+        class="tag">
+
+        Bridging Opportunities. Building Partnerships.
+
+  </text>
+
+</svg>
