@@ -241,26 +241,36 @@ HEADER
     z-index:1000;
 
     background:#fff;
-
-    box-shadow:0 1px 12px rgba(0,0,0,.05);
+    box-shadow:0 2px 15px rgba(0,0,0,.06);
 
 }
 
 .nav-container{
 
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
 
     min-height:90px;
 
 }
 
-.logo img {
-    height: 110px;
-    width: auto;
-    display: block;
+.logo{
+
+    display:flex;
+    align-items:center;
+
 }
+
+.logo img{
+
+    height:95px;
+    width:auto;
+    display:block;
+
+}
+
+/* Desktop Navigation */
 
 .nav-menu{
 
@@ -273,6 +283,7 @@ HEADER
 .nav-links{
 
     display:flex;
+    align-items:center;
     gap:34px;
 
 }
@@ -287,23 +298,23 @@ HEADER
 
 .nav-links a::after{
 
-    content:'';
+    content:"";
 
     position:absolute;
-    bottom:-8px;
     left:0;
+    bottom:-8px;
 
     width:0;
     height:3px;
 
     background:var(--secondary);
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
 .nav-links a:hover::after,
-.nav-links .active::after{
+.nav-links a.active::after{
 
     width:100%;
 
@@ -313,9 +324,13 @@ HEADER
 
     background:var(--primary);
     color:#fff;
+
     padding:14px 26px;
-    border-radius:40px;
+
+    border-radius:50px;
     font-weight:700;
+
+    transition:.3s;
 
 }
 
@@ -325,12 +340,24 @@ HEADER
 
 }
 
+/* Hamburger */
+
 .hamburger{
 
     display:none;
-    flex-direction:column;
-    gap:6px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    background:none;
+
     cursor:pointer;
+
+    flex-direction:column;
+    justify-content:center;
+
+    gap:6px;
 
 }
 
@@ -338,8 +365,87 @@ HEADER
 
     width:28px;
     height:3px;
+
     background:var(--dark);
-    border-radius:20px;
+
+    border-radius:10px;
+
+}
+
+/* ==========================
+TABLET & MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .nav-container{
+
+        min-height:75px;
+
+    }
+
+    .logo img{
+
+        height:60px;
+
+    }
+
+    .hamburger{
+
+        display:flex;
+
+    }
+
+    .nav-menu{
+
+        position:fixed;
+
+        top:75px;
+        left:-100%;
+
+        width:100%;
+
+        background:#fff;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:25px;
+
+        padding:30px;
+
+        transition:left .35s ease;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    }
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+    .nav-links{
+
+        width:100%;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:22px;
+
+    }
+
+    .btn-nav{
+
+        width:100%;
+
+        text-align:center;
+
+    }
 
 }
 
@@ -1648,12 +1754,20 @@ RESPONSIVE
 
 }
 
-.about-grid,
 .why-grid,
 .services-grid,
 .india-grid{
 
     grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-grid{
+
+    grid-template-columns:1fr;
+    gap:40px;
+
+}
 
 }
 
@@ -1675,7 +1789,7 @@ RESPONSIVE
 
 }
 
-}
+
 
 
 /*==================================================
@@ -1683,6 +1797,19 @@ TABLET
 ==================================================*/
 
 @media (max-width:768px){
+
+    .logo{
+    display:flex;
+    align-items:center;
+}
+
+   .logo img{
+    height:60px;
+}
+
+.nav-container{
+    min-height:75px;
+}
 
 section{
 
@@ -1692,25 +1819,22 @@ section{
 
 .nav-menu{
 
+    display:flex;
     position:fixed;
-
-    top:90px;
-
+    top:70px;
     left:-100%;
 
     width:100%;
-
     background:#fff;
 
     flex-direction:column;
-
     align-items:flex-start;
 
-    padding:35px;
+    padding:30px;
 
-    gap:30px;
+    gap:25px;
 
-    transition:.35s;
+    transition:left .35s ease;
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
@@ -1821,7 +1945,11 @@ section{
 MOBILE
 ==================================================*/
 
-@media (max-width:480px){
+@media (max-width:768px){
+
+   .hamburger{
+    display:flex;
+}
 
 .container{
 
@@ -1959,8 +2087,6 @@ LARGE DESKTOPS
 .hero h1{
 
     max-width:760px;
-
-}
 
 }
 
@@ -2430,7 +2556,50 @@ a{
     transform: translateY(20px);
 }
 
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
 
+@media (max-width: 768px){
+
+    .about-story .about-grid{
+
+    grid-template-columns:1fr;
+    gap:40px;
+
+}
+
+.about-story .about-image{
+
+    order:-1;
+    text-align:center;
+    margin-bottom:30px;
+
+}
+
+
+    .about-story .about-image img{
+
+    width:100%;
+    max-width:500px;
+    height:auto;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+    gap:35px;
+
+}
+
+.contact-form{
+
+    margin-top:0;
+
+}
+
+}
 
 
 /*==================================================
