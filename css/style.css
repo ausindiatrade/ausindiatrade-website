@@ -519,7 +519,7 @@ HERO
 
     display:flex;
     gap:18px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
     margin-bottom:60px;
 
@@ -656,6 +656,7 @@ ABOUT PREVIEW
     align-items:stretch;
 
 }
+
 
 .about-story .about-grid{
 
@@ -1773,19 +1774,13 @@ RESPONSIVE
 
 .process-grid{
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(4,1fr);
 
 }
 
 .industry-grid{
 
-    grid-template-columns:repeat(3,1fr);
-
-}
-
-.footer-grid{
-
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(4,1fr);
 
 }
 
@@ -1977,7 +1972,7 @@ MOBILE
 
 .hero-buttons{
 
-    flex-direction:column;
+    flex-direction: row;
 
 }
 
